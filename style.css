@@ -1,0 +1,451 @@
+li {
+    list-style-type: none;
+}
+
+nav img {
+    max-width: 3rem;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+/* Cards */
+.card {
+    background-color: #FDF5F9;
+    filter: drop-shadow(1rem 1rem 1rem gray)
+}
+
+.card-body a {
+    background-color: crimson;
+    border-radius: 0.5rem;
+    color: whitesmoke;
+}
+
+.card-body a:hover {
+    background-color: maroon;
+    font-weight: 800;
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    background-color: #F9CCBA;
+    transition: 300ms linear;
+}
+
+/* Forms */
+
+form .btn {
+    background-color: crimson;
+    color: whitesmoke;
+}
+
+form .btn:hover {
+    background-color: maroon;
+    font-weight: 800;
+    transform: scale(1.1);
+    color: whitesmoke;
+}
+
+form {
+    background-color: #FDF5F9;
+    filter: drop-shadow(1rem 1rem 1.5rem gray);
+}
+
+form label {
+    font-weight: 800;
+}
+
+/* Shadows */
+
+@keyframes fg-flip {
+    0% {
+        transform: rotateY(10deg) rotateX(5deg) scale(1.1);
+    }
+
+    25% {
+        transform: rotateY(-20deg) rotateX(15deg) scale(0.9);
+    }
+
+    50% {
+        transform: rotateY(20deg) rotateX(-10deg) scale(1.1);
+    }
+
+    75% {
+        transform: rotateY(-20deg) rotateX(15deg) scale(0.9);
+    }
+
+    100% {
+        transform: rotateY(10deg) rotateX(5deg) scale(1.1);
+    }
+
+}
+
+/* Navbar */
+
+nav {
+    text-align: center;
+    position: fixed;
+    z-index: 100;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding-top: 0;
+    overflow-x: hidden;
+    background-color: #FDF5F9;
+    opacity: 90%;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.2),
+    15px 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler-icon {
+    color: maroon;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+nav > a {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: maroon;
+    font-size: 1.8rem;
+}
+
+nav ul li a {
+    color: maroon;
+    font-weight: 900;
+    font-family: 'Quicksand', sans-serif;
+    text-transform: uppercase;
+    transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover {
+    color: crimson;
+    text-decoration: none;
+    transform: scale(1.1);
+    filter: drop-shadow(1rem 1rem 1rem black);
+    border-radius: 0.5rem;
+}
+
+section {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* Footer */
+
+.footer {
+    background-image: url("./img/footer-4.svg");
+    background-position: center;
+    width: auto;
+}
+
+.footer .icontainer {
+    background-color: crimson;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 2%;
+    filter: drop-shadow(0.3rem 0.3rem 1rem black);
+}
+
+.footer .bx {
+    font-size: 2rem;
+    color: #FDF5F9;
+}
+
+.footer .icontainer:hover {
+    transform: scale(1.2);
+    background-color: maroon;
+}
+
+.footer-note a:hover {
+    color: maroon;
+    text-decoration: none;
+    transform: scale(1.8);
+    border-radius: 0.5rem;
+}
+
+.footer-note a {
+    color: crimson;
+    font-weight: 800;
+}
+
+/* Contacts */
+
+.bx {
+    font-size: 2rem;
+    color: crimson;
+}
+
+/* iFrame */
+
+iframe {
+    border: 0;
+    max-width: 80%;
+    filter: drop-shadow(0.5rem 0.5rem 1rem gray);
+}
+
+/* Fonts */
+
+section h6 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+section h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+section h4 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+section h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+section h2 {
+    font-family: 'Dawning of a New Day', sans-serif;
+    font-weight: 800;
+    font-size: 3.5rem;
+    color: maroon;
+}
+
+section h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    color: black;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0.8rem 0;
+    font-size: 1rem;
+}
+
+/* Background */
+
+section:nth-of-type(1) {
+    background-image: url('./img/section-1-bg-flesh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+section:nth-of-type(2) {
+    background-image: url('./img/section-2-bg-flesh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+section:nth-of-type(3) {
+    background-image: url('./img/section-3-bg-flesh.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+section:nth-of-type(4) {
+    background-image: url('./img/section-4-bg-official.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+}
+
+section:nth-of-type(5) {
+    background-image: url('./img/section-5-bg-official.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+section:nth-of-type(6) {
+    background-image: url('./img/section-6-bg-official.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+    width: auto;
+}
+
+/* Carousel */
+.carousel-caption h5, .carousel-caption p {
+    filter: drop-shadow(1rem 1rem 1rem rgb(0, 0, 0));
+   color: maroon;
+}
+
+.carousel-inner {
+    filter: drop-shadow(1rem 1rem 1rem gray);
+}
+
+.subcontainer-2:nth-of-type(1), 
+.subcontainer-2:nth-of-type(2),
+.subcontainer-2:nth-of-type(3) {
+    position: relative;
+}
+
+.static {
+    filter: drop-shadow(1rem 1rem 1rem rgb(87, 86, 86));
+}
+
+.illustration {
+    filter: drop-shadow(1rem 1rem 1rem rgb(87, 86, 86));
+    animation-name: fg-flip;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+    position: absolute;
+    z-index: 1;
+}
+
+
+.overlay {
+    filter: drop-shadow(1rem 1rem 1rem rgb(87, 86, 86));
+    animation-name: bg-flip;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes bg-flip {
+    0% {
+        transform: rotateY(-10deg) rotateX(5deg) scale(0.9);
+    }
+
+    25% {
+        transform: rotateY(20deg) rotateX(-10deg) scale(1.1);
+    }
+
+    50% {
+        transform: rotateY(-20deg) rotateX(15deg) scale(0.9);
+    }
+
+    75% {
+        transform: rotateY(20deg) rotateX(-10deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotateY(-10deg) rotateX(5deg) scale(0.9);
+    }
+
+}
+
+@media (max-width: 468px) {
+    section h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 992px) {
+    nav {
+        background-color: white;
+    }
+}
+
+
+.container-5 .subcontainer-2 {
+    
+    filter: drop-shadow(1rem 1rem 1rem gray);
+    background-color: #FDF5F9;
+    animation-play-state: running;
+    animation-name: flipover;
+    animation-duration: 6s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flipover {
+    0% {
+        transform: perspective(900px) rotateX(5deg) rotateY(12deg);;
+    }
+
+    25% {
+        transform: perspective(900px) rotateX(-5deg) rotateY(-12deg);
+    }
+
+    50% {
+        transform: perspective(900px) rotateX(5deg) rotateY(12deg);
+    }
+
+    75% {
+        transform: perspective(900px) rotateX(-5deg) rotateY(-12deg);
+    }
+
+    100% {
+        transform: perspective(900px) rotateX(5deg) rotateY(12deg);
+    }
+
+}
+
+@keyframes blink {
+    0% {
+        transform: rotateX(50deg) rotateY(20deg) scale(0.8);
+    }
+    25% {
+        transform: rotateX(0deg) rotateY(-20deg) scale(0.7);
+    }
+    50% {
+        transform: rotateX(-50deg) rotateY(-30deg) scale(0.9);
+    }
+    75% {
+        transform: rotateX(0deg) rotateY(-20deg) scale(1.1);
+    }
+    100% {
+        transform: rotateX(-50deg) rotateY(20deg) scale(0.9);
+    }
+}
+
+input:active, select:active, textarea:active {
+    filter: blur(5px);
+    transition: 300ms ease-out;
+}
+
+form:hover {
+    transform: scale(1.1);
+    transition: 300ms ease-out;
+}
+
+iframe:hover {
+    transform: perspective(900px) rotateX(5deg) rotateY(12deg) scale(1.5);
+    transition: 300ms ease-out;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
